@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FilePond Node.js Example</title>
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+</head>
+<body>
+  <input type="file" class="filepond">
+  
+  <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+  <script>
+    const pond = FilePond.create(document.querySelector('.filepond'), {
+      server: 'http://localhost:3000/upload'
+    });
+  </script>
+</body>
+</html>
